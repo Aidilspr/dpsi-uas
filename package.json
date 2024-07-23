@@ -1,6 +1,6 @@
 {
   "name": "uas",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -19,7 +19,7 @@
     "mysql2": "^3.10.2",
     "sequelize": "^6.37.3"
   },
-  "main": "index.js",
-  "author": "Ferdiansyah Eka Putra",
+  "main": "app.js",
+  "author": "Aidil Saputra",
   "license": "MIT"
 }
