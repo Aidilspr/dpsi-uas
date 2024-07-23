@@ -26,11 +26,11 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', indexRouter);
 app.use('/auth', authRouter);
-app.use('/exam',examRouter)
+app.use('/exam', examRouter)
 app.use('/question', questionRouter)
-app.use('/answers',answersRouter)
-app.use('/scores',scoresRouter)
-app.use('/student',studentRouter)
+app.use('/answers', answersRouter)
+app.use('/scores', scoresRouter)
+app.use('/student', studentRouter)
 
 
 
@@ -41,5 +41,9 @@ sequelize.sync()
     .catch(err => {
         console.error('Error synchronizing database:', err);
     });
+const PORT = 3000
+app.listen(PORT, function () {
+    console.log(`Server running on port ${PORT}`);
+});
 
 module.exports = app;
